@@ -5,7 +5,8 @@ from transformers import pipeline
 @st.cache_resource(show_spinner=False)
 def load_summarizer_model():
     with st.spinner("Please wait... The AI model is loading."):
-        return pipeline("summarization", model="facebook/bart-large-cnn")
+        # Lightweight version of BART for faster deploy & execution
+        return pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
 
 summarizer = load_summarizer_model()
 
