@@ -1,7 +1,6 @@
 streamlit
 PyMuPDF
 transformers
-torch==2.0.0
 sentencepiece
 pdf2image
 pytesseract
