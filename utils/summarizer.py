@@ -1,4 +1,5 @@
 import streamlit as st
+import torch
 from transformers import pipeline
 
 # Load summarization model once and cache it
@@ -6,7 +7,11 @@ from transformers import pipeline
 def load_summarizer_model():
     with st.spinner("Please wait... The AI model is loading."):
         # Lightweight version of BART for faster deploy & execution
-        return pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
+        return pipeline(
+            "summarization",
+            model="sshleifer/distilbart-cnn-12-6",
+            device=0 if torch.cuda.is_available() else -1
+        )
 
 summarizer = load_summarizer_model()
 
