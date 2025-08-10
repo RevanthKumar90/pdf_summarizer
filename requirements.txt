@@ -4,3 +4,4 @@ sentencepiece
 PyMuPDF
 pdf2image
 pytesseract
+torch==2.2.2
