@@ -1,6 +1,2 @@
 streamlit
 PyMuPDF
-transformers
-sentencepiece
-pdf2image
-pytesseract
