@@ -4,7 +4,6 @@ from utils.pdf_reader import extract_text_from_pdf
 from utils.summarizer import summarize_text
 import pyperclip
 
-
 st.set_page_config(page_title="PDF Summarizer", layout="wide")
 
 # 💡 Stylish Header
@@ -40,11 +39,11 @@ if uploaded_file:
     st.success("✅ Text extracted!")
 
     # 📑 Extracted Text and Summary Side-by-Side
-    col1, col2 = st.columns([2,2])
+    col1, col2 = st.columns([2, 2])
 
     with col1:
         st.subheader("📜 Extracted Text")
-        st.text_area("", value=extracted_text[:2000], height=300)
+        st.text_area("", value=extracted_text[:2000] if extracted_text else "", height=300)
 
     with col2:
         if st.button("✍️ Generate Summary"):
@@ -53,9 +52,9 @@ if uploaded_file:
                 st.session_state["summary"] = summary
             st.success("✅ Summary ready!")
 
-        if "summary" in st.session_state:
+        if st.session_state.get("summary"):
             st.subheader("📝 Summary")
-            st.text_area("", value=st.session_state["summary"], height=300)
+            st.text_area("", value=st.session_state.get("summary", ""), height=300)
             
             # 💾 Download and Copy buttons side-by-side
             col_dl, col_cp = st.columns([1, 1])
