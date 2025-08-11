@@ -1,2 +1,5 @@
 streamlit
+PyMuPDFstreamlit
 PyMuPDF
+pdf2image
+pytesseracts
