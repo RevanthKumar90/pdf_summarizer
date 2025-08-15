@@ -86,16 +86,16 @@ Here are some screens of the app in action:
 
 ### App Home & PDF Upload
 
-![PDF Summarizer - Home](<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/00aaf034-67e8-436e-84e2-fe118f3e8f76" />)
+<img width="1920" height="1020" alt="Screenshot 2025-08-15 202646" src="https://github.com/user-attachments/assets/f06e2841-0e53-49a2-b9fc-7004de1f4187" />
 
 ### Extracted Text Example
 
-![PDF Extraction Example](<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/4cd793c9-5fb1-4dd4-94e4-e0695b44d683" />)
+<img width="1920" height="1020" alt="Screenshot 2025-08-15 202826" src="https://github.com/user-attachments/assets/a4a755c6-c11f-47c9-94a0-09cb27bbb96a" />
+
 
 ### Summary Generation Example
 
-![PDF Summary Example](<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/2422dbf0-27c0-4a82-b084-04425f9482eb" />)
-
+<img width="1920" height="1020" alt="Screenshot 2025-08-15 202937" src="https://github.com/user-attachments/assets/ff04bf4c-0494-4b8c-a7f0-6a768f9c2501" />
 
 
 ## 📄 License
