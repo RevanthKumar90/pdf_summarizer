@@ -1,5 +1,8 @@
 streamlit
-PyMuPDFstreamlit
 PyMuPDF
 pdf2image
-pytesseracts
+pytesseract
+torch
+transformers
+Pillow
+pyperclip

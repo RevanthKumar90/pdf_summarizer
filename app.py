@@ -6,7 +6,7 @@ import pyperclip
 
 st.set_page_config(page_title="PDF Summarizer", layout="wide")
 
-# 💡 Stylish Header
+# 💡 Stylish Header x
 def get_base64_image(image_path):
     with open(image_path, "rb") as img_file:
         b64_data = base64.b64encode(img_file.read()).decode()
@@ -38,13 +38,11 @@ if uploaded_file:
         st.session_state["extracted_text"] = extracted_text
     st.success("✅ Text extracted!")
 
-    # 📑 Extracted Text and Summary Side-by-Side
     col1, col2 = st.columns([2, 2])
 
     with col1:
         st.subheader("📜 Extracted Text")
-        st.text_area("", value=extracted_text[:2000] if extracted_text else "", height=300)
-
+        st.text_area("Extracted Text", value=st.session_state.get("extracted_text", ""), height=300)
     with col2:
         if st.button("✍️ Generate Summary"):
             with st.spinner("⏳ Summarizing..."):
@@ -55,6 +53,7 @@ if uploaded_file:
         if st.session_state.get("summary"):
             st.subheader("📝 Summary")
             st.text_area("", value=st.session_state.get("summary", ""), height=300)
+            # Download and copy block untouched
             
             # 💾 Download and Copy buttons side-by-side
             col_dl, col_cp = st.columns([1, 1])

@@ -1,21 +1,16 @@
-import fitz # PyMuPDF
-from pdf2image import convert_from_bytes
-import pytesseract
+import fitz  # PyMuPDF
 from io import BytesIO
 
 def extract_text_from_pdf(pdf_file):
     text = ""
-    
-    # First: Try text-based extraction
+    # Try text-based extraction
     pdf_data = pdf_file.read()
     with fitz.open(stream=pdf_data, filetype="pdf") as doc:
         for page in doc:
             text += page.get_text()
     
-    # If no text found, fall back to OCR
+    # If no text found, give a message
     if not text.strip():
-        images = convert_from_bytes(BytesIO(pdf_data))
-        for img in images:
-            text += pytesseract.image_to_string(img)
+        text = "Sorry, this PDF does not contain text that can be extracted directly. The OCR feature is currently disabled."
     
     return text
