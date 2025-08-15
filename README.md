@@ -88,15 +88,19 @@ Here are some screens of the app in action:
 
 <img width="1920" height="1020" alt="Screenshot 2025-08-15 202646" src="https://github.com/user-attachments/assets/f06e2841-0e53-49a2-b9fc-7004de1f4187" />
 
+---
+
 ### Extracted Text Example
 
 <img width="1920" height="1020" alt="Screenshot 2025-08-15 202826" src="https://github.com/user-attachments/assets/a4a755c6-c11f-47c9-94a0-09cb27bbb96a" />
 
+---
 
 ### Summary Generation Example
 
 <img width="1920" height="1020" alt="Screenshot 2025-08-15 202937" src="https://github.com/user-attachments/assets/ff04bf4c-0494-4b8c-a7f0-6a768f9c2501" />
 
+---
 
 ## 📄 License
 
