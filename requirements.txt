@@ -3,3 +3,4 @@ transformers
 torch
 sentencepiece
 pymupdf
+python-3.10
