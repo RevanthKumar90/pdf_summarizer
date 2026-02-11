@@ -1,8 +1,5 @@
 streamlit
-PyMuPDF
-pdf2image
-pytesseract
-torch
 transformers
-Pillow
-pyperclip
+torch
+sentencepiece
+pymupdf
